@@ -1,9 +1,9 @@
 :root {
   --color-bg: #ffffff;
-  --color-bg-alt: #f4f6f8;      /* slightly different background for alternating sections */
-  --color-text: #1f2933;        /* near-black, easy to read on white */
+  --color-bg-alt: #f4f6f8;     
+  --color-text: #1f2933;       
   --color-heading: #102a43;
-  --color-primary: #2563eb;     /* accent blue, used for buttons/links */
+  --color-primary: #2563eb;     
   --color-primary-dark: #1e40af;
   --color-border: #d9e2ec;
 
@@ -24,7 +24,7 @@
 body {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 1rem;      /* 16px, a readable minimum */
+  font-size: 1rem;      
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -38,19 +38,19 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
-h1 { font-size: clamp(2rem, 5vw, 3rem); }   /* clamp = responsive font size without a media query */
+h1 { font-size: clamp(2rem, 5vw, 3rem); }   
 h2 { font-size: clamp(1.5rem, 4vw, 2.25rem); margin-bottom: var(--spacing-md); }
 h3 { font-size: 1.25rem; }
 
 p {
   margin-top: 0;
-  max-width: 65ch; /* keeps paragraphs from stretching too wide to read comfortably */
+  max-width: 65ch; 
 }
 
 .container {
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto;       /* centers the container */
+  margin: 0 auto;      
   padding: 0 var(--spacing-md);
 }
 
@@ -87,7 +87,7 @@ p {
 }
 
 .main-nav ul {
-  display: flex;           /* lays nav items out in a row */
+  display: flex;         
   gap: var(--spacing-md);
   list-style: none;
   margin: 0;
@@ -99,7 +99,7 @@ p {
   text-decoration: none;
   font-weight: 500;
   padding: 0.25rem 0.1rem;
-  border-bottom: 2px solid transparent; /* invisible until hover, keeps layout from shifting */
+  border-bottom: 2px solid transparent; 
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -182,7 +182,7 @@ button:focus-visible {
 
 .skills-list {
   display: flex;
-  flex-wrap: wrap;         /* lets items wrap onto a new line on small screens */
+  flex-wrap: wrap;         
   gap: var(--spacing-sm);
   list-style: none;
   padding: 0;
@@ -191,7 +191,7 @@ button:focus-visible {
 .skills-list li {
   background-color: var(--color-bg-alt);
   border: 1px solid var(--color-border);
-  border-radius: 999px;    /* pill shape */
+  border-radius: 999px;   
   padding: 0.5rem 1rem;
   font-size: 0.95rem;
 }
@@ -216,7 +216,7 @@ button:focus-visible {
   }
 
   .project-grid {
-    grid-template-columns: 1fr; /* single column on small screens */
+    grid-template-columns: 1fr; 
   }
 
   .section {
